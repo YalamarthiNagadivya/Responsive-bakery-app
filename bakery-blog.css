@@ -1,0 +1,138 @@
+/* 
+Screen size in cm = 20cm
+page = Screen size in pixel = 756px;
+10% to margins = 75.6px;
+blog or section = 90% content = 680.4px;
+
+*/
+/* Dimensions of body are 880px width and 1002px height
+    Dimensions of Page are 794px width and 1002px height
+    1% of body width is 8.797px
+    left and right margin for page is 4*8.797 = 35.188px
+    1% of body height is 8.797px
+    top and bottom margin for page is 1*8.797 = 35.188px
+
+*/
+
+body {
+    margin: 0 auto;
+}
+
+#page {
+    width: 90%;
+
+    margin: 1% 4%;
+    padding: 2%;
+    border: 0.0625em solid #333;
+    background-color: rgb(188, 255, 255);
+
+}
+
+.blog,
+.footer {
+    padding: 1% 1%;
+    margin: 0;
+    /* width: fit-content; */
+}
+
+#bar {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+}
+
+.citem {
+    text-decoration: none;
+    display: block;
+    color: rgb(59, 140, 173);
+    background: linear-gradient(#fff, rgb(224, 243, 250));
+    padding: 0.4em;
+    margin: 0.202em;
+    border-bottom: 2px dotted rgb(48, 116, 143);
+    letter-spacing: 0.1em;
+}
+
+.other-flex label {
+    font-family: "Arial";
+}
+
+#search-value {
+    border: 2px dotted rgb(48, 116, 143);
+}
+
+#search-button {
+    background-color: rgb(59, 140, 173);
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 1%;
+}
+
+.other-flex {
+    display: inline-block;
+    flex-direction: column;
+
+}
+
+.left-span {
+    display: inline-block;
+    width: 20%;
+}
+
+.left-span p {
+    margin: 0;
+    padding: 0;
+    display: block;
+    /* line-height: 1%; */
+}
+
+.tag {
+    font-size: 2em;
+    line-height: 10px;
+    color: rgb(252, 84, 118);
+}
+
+.tag1 {
+    font-size: 4em;
+    line-height: 32px;
+    color: rgb(252, 84, 118);
+
+}
+
+.tag2 {
+    font-size: 0.4em;
+    letter-spacing: 0.6em;
+}
+
+@media screen and (max-width : 880px) {
+    .blog {
+        background-color: aliceblue;
+    }
+
+    #bar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .left-span p {
+        display: inline;
+    }
+
+    .tag,
+    .tag1,
+    .tag2 {
+        font-size: 32px;
+        line-height: normal;
+    }
+
+
+}

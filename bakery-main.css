@@ -1,0 +1,222 @@
+.content-holder {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 6%;
+    border-bottom: 2px dotted rgb(64, 135, 164);
+}
+
+.main-content,
+.other {
+
+    padding: 1% 1%;
+    margin: 0;
+    margin-right: 1%;
+}
+
+.main-content {
+    width: 70%;
+
+
+}
+
+.other {
+    width: 30%;
+
+}
+
+#newsletter {
+    border: 1px solid khaki;
+    padding: 5%;
+    margin-bottom: 6%;
+}
+
+.content,
+#news {
+    padding: 5%;
+}
+
+.other section p,
+section label,
+section input {
+    font-family: "Arial";
+    font-size: 0.9em;
+}
+
+.other section h3,
+.other section p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    display: inline-block;
+}
+
+section label {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+#email {
+    width: 100%;
+    border: 2px dotted rgb(48, 102, 157);
+}
+
+#sub-btn {
+    margin: 0;
+    margin-top: 3%;
+    background-color: rgb(48, 93, 139);
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    padding: 1.5%;
+    font-size: 0.9em;
+}
+
+#pro {
+    display: flex;
+}
+
+.container img {
+    float: none;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.content p {
+
+    text-align: justify;
+}
+
+#news a {
+    display: block;
+    color: rgb(40, 101, 126);
+    background: transparent;
+    padding: 0.4em;
+    margin: 0.202em;
+    border-bottom: 2px dotted rgb(101, 178, 209);
+    letter-spacing: 0.1em;
+    font-family: "Arial";
+}
+
+.main-content h1 {
+    font-weight: 360;
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+    line-height: 0.8em;
+}
+
+.intro {
+    width: 47.769516%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1%;
+    color: rgb(212, 94, 34);
+    line-height: 1.8em;
+    font-family: "Arial";
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.img-block h4,
+.img-block h5 {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+}
+
+.img-block p {
+    font-family: "Arial";
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-foot {
+    width: 70%;
+}
+
+#left-foot h2,
+#right-foot h2,
+#right-foot h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#right-foot {
+    width: 30%;
+}
+
+@media screen and (max-width : 880px) {
+    .main-content h1 {
+        font-size: 2em;
+        transition: 0.8s;
+    }
+
+    .intro {
+        font-size: 0.8em;
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter {
+        padding: 10%;
+    }
+
+    #newsletter p {
+        margin-top: 6%;
+        line-height: 130%;
+    }
+
+
+    #pro {
+        display: flex;
+    }
+
+    .container img {
+        float: left;
+        display: block;
+        margin-right: 3%;
+        border-radius: 50%;
+    }
+
+    .content p {
+
+        text-align: justify;
+    }
+
+    .imgs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-block {
+        display: flex;
+    }
+
+    .img-block>div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2%;
+        margin-top: 4%;
+    }
+
+    .img-block>img {
+        margin-bottom: 6%;
+    }
+
+    .img-block h4,
+    .img-block h5,
+    .img-block p {
+        display: inline;
+    }
+
+}
